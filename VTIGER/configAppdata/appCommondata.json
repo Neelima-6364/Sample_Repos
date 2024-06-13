@@ -1,0 +1,9 @@
+{
+	"Browser":"chrome",
+	"url" :"http://localhost:8888/",
+	"UserName" :"admin",
+	"Password" :"admin",
+	"timeout" :20.4,
+	"mobile" :9878987678
+
+}

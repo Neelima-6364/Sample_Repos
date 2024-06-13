@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner_2(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.vtiger.crm.orgtest.CreateOrgTest">
+        <methods>
+          <include name="beforeclass"/>
+          <include name="afterMethod"/>
+          <include name="beforesuite"/>
+          <include name="afterClass"/>
+          <include name="createOrgWithMandField"/>
+          <include name="beforeMethod"/>
+          <include name="createOrgwithIndustry"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- com.vtiger.crm.orgtest.CreateOrgTest -->
+    </classes>
+  </test> <!-- TestRunner_2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
