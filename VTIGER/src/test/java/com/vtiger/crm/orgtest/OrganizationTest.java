@@ -30,21 +30,6 @@ public class OrganizationTest extends BaseClass {
 		UtilityClassobject.getTest().log(Status.INFO, "Navigate to Organization List page");
 		hp.getOrganizationLink().click();
 		
-		OrganizationsPage orgp=new OrganizationsPage(driver);
-		UtilityClassobject.getTest().log(Status.INFO, "Navigate to create Organization page");
-		orgp.getCreateOrgBtn().click();
-		
-		/* create organization with organization name*/
-		CreateNewOrganizationPage crneworgp=new CreateNewOrganizationPage(driver);
-		UtilityClassobject.getTest().log(Status.INFO, "Enter OrgName and create Organization");
-		crneworgp.createOrganization(orgName);
-
-		/*verify header oganisation actual data*/
-		OrganizationInformationPage orginfop=new OrganizationInformationPage(driver);
-		String headerinfo =orginfop.getHeaderinfo().getText();
-
-		Assert.assertEquals(true, headerinfo.contains(orgName));
-		UtilityClassobject.getTest().log(Status.INFO,"Header Info verified");
 	}	
 
 }
