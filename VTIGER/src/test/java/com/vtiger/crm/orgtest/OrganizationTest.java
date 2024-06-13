@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -14,6 +15,7 @@ import com.vtiger.crm.objectrepositoryutility.HomePage;
 import com.vtiger.crm.objectrepositoryutility.OrganizationInformationPage;
 import com.vtiger.crm.objectrepositoryutility.OrganizationsPage;
 
+@Listeners(com.vtiger.crm.ListnerUtility.ListnerImplementation.class)
 public class OrganizationTest extends BaseClass {
 	@Test(groups = {"smokeTest"})
 	public void createOrgWithMandField() throws EncryptedDocumentException, IOException

@@ -49,8 +49,8 @@ public class BaseClass {
 	@BeforeClass(groups = {"smokeTest", "regressionTest"})
 	public void beforeclass(/*String browser*/) throws IOException
 	{
-		//String browser=System.getProperty("Browser",fLib.getDataFromPropertiesFile("Browser"));
-		String browser =fLib.getDataFromPropertiesFile("Browser");
+		String browser=System.getProperty("Browser",fLib.getDataFromPropertiesFile("Browser"));
+		//String browser =fLib.getDataFromPropertiesFile("Browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();
@@ -72,12 +72,12 @@ public class BaseClass {
 	public void beforeMethod() throws IOException
 	{
 		LoginPage lp=new LoginPage(driver);
-//		String URL=System.getProperty("url",fLib.getDataFromPropertiesFile("url"));
-//		String un=System.getProperty("Username",fLib.getDataFromPropertiesFile("UserName"));
-//		String ps=System.getProperty("Password",fLib.getDataFromPropertiesFile("Password"));
-		String URL=fLib.getDataFromPropertiesFile("url");
-		String un =fLib.getDataFromPropertiesFile("UserName");
-		String ps =fLib.getDataFromPropertiesFile("Password");
+		String URL=System.getProperty("url",fLib.getDataFromPropertiesFile("url"));
+		String un=System.getProperty("Username",fLib.getDataFromPropertiesFile("UserName"));
+		String ps=System.getProperty("Password",fLib.getDataFromPropertiesFile("Password"));
+//		String URL=fLib.getDataFromPropertiesFile("url");
+//		String un =fLib.getDataFromPropertiesFile("UserName");
+//		String ps =fLib.getDataFromPropertiesFile("Password");
 		
 		
 		lp.loginToApp(URL,un, ps);
