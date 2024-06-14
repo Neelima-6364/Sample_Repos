@@ -24,6 +24,8 @@ import com.vtiger.crm.generic.webdriverutility.WebdriverUtility;
 import com.vtiger.crm.objectrepositoryutility.HomePage;
 import com.vtiger.crm.objectrepositoryutility.LoginPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 	public static WebDriver sdriver;
 
@@ -53,14 +55,17 @@ public class BaseClass {
 		//String browser =fLib.getDataFromPropertiesFile("Browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
+			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
 		if(browser.equalsIgnoreCase("edge"))
 		{
+			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 		}
 		if(browser.equalsIgnoreCase("firefox"))
 		{
+			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 		}
 		driver.manage().window().maximize();

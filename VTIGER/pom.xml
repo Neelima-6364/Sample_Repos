@@ -29,6 +29,25 @@
           </profile>    
           
           <profile>
+               <id>RegionalRT</id>
+                <build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.18.1</version>
+						<configuration>
+							<suiteXmlFiles>
+								<!-- TestNG suite XML files -->
+								<suiteXmlFile>Suite_RegionalRegressionTest.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>              
+          </profile>    
+          
+          <profile>
                <id>DCBT</id>
                 <build>
 				<plugins>
@@ -80,9 +99,14 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.9.0</version>
-  
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.8.0</version>
+</dependency>
 
 
 <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
