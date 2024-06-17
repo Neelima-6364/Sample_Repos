@@ -13,6 +13,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
 import com.vtiger.crm.generic.databaseutility.DataBaseUtility;
@@ -25,11 +26,11 @@ import com.vtiger.crm.objectrepositoryutility.HomePage;
 import com.vtiger.crm.objectrepositoryutility.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.vtiger.crm.ListnerUtility.ListnerImplementation.class)
 public class BaseClass {
+	
 	public static WebDriver sdriver;
-
-	public WebDriver driver;
+    public WebDriver driver;
 	public DataBaseUtility dLib=new DataBaseUtility();
 	public FileUtility fLib=new FileUtility();
 	public ExcelUtility eLib=new ExcelUtility();
@@ -47,11 +48,11 @@ public class BaseClass {
 
 	}
 
-//	@Parameters("BROWSER")
+	@Parameters("BROWSER")
 	@BeforeClass(groups = {"smokeTest", "regressionTest"})
-	public void beforeclass(/*String browser*/) throws IOException
+	public void beforeclass(String browser) throws IOException
 	{
-		String browser=System.getProperty("Browser",fLib.getDataFromPropertiesFile("Browser"));
+		//String browser=System.getProperty("Browser",fLib.getDataFromPropertiesFile("Browser"));
 		//String browser =fLib.getDataFromPropertiesFile("Browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{

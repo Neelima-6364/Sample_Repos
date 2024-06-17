@@ -1,3 +1,4 @@
+
 package com.vtiger.crm.contacttest;
 
 import java.io.IOException;
@@ -23,7 +24,7 @@ import com.vtiger.crm.objectrepositoryutility.OrganizationInformationPage;
 import com.vtiger.crm.objectrepositoryutility.OrganizationListPopupPage;
 import com.vtiger.crm.objectrepositoryutility.OrganizationsPage;
 
-@Listeners(com.vtiger.crm.ListnerUtility.ListnerImplementation.class)  // for Class level
+ // for Class level
 public class CreateContactTest extends BaseClass{
 
 	@Test(groups ="smokeTest")
