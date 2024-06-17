@@ -48,11 +48,11 @@ public class BaseClass {
 
 	}
 
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass(groups = {"smokeTest", "regressionTest"})
-	public void beforeclass(String browser) throws IOException
+	public void beforeclass(/*String browser*/) throws IOException
 	{
-		//String browser=System.getProperty("Browser",fLib.getDataFromPropertiesFile("Browser"));
+		String browser=System.getProperty("Browser",fLib.getDataFromPropertiesFile("Browser"));
 		//String browser =fLib.getDataFromPropertiesFile("Browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{

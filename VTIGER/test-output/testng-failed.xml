@@ -8,8 +8,8 @@
         <methods>
           <include name="beforeclass"/>
           <include name="afterMethod"/>
-          <include name="beforesuite"/>
           <include name="afterClass"/>
+          <include name="beforesuite"/>
           <include name="createOrgWithMandField"/>
           <include name="beforeMethod"/>
           <include name="createOrgwithIndustry"/>

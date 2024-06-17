@@ -1,44 +1,293 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-13T21:51:15 IST" name="Default suite" finished-at="2024-06-13T21:51:34 IST" duration-ms="19147">
+  <suite started-at="2024-06-17T15:53:27 IST" name="Suite" finished-at="2024-06-17T15:55:08 IST" duration-ms="100616">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateOrgTest.createOrgwithIndustry()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" name="createOrgwithIndustry" class="com.vtiger.crm.orgtest.CreateOrgTest"/>
+        <method signature="CreateOrgTest.createOrgwithMobileNum()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" name="createOrgwithMobileNum" class="com.vtiger.crm.orgtest.CreateOrgTest"/>
+        <method signature="CreateOrgTest.createOrgwithIndustry()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" name="createOrgwithIndustry" class="com.vtiger.crm.orgtest.CreateOrgTest"/>
+        <method signature="CreateOrgTest.createOrgwithMobileNum()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" name="createOrgwithMobileNum" class="com.vtiger.crm.orgtest.CreateOrgTest"/>
+      </group> <!-- regressionTest -->
       <group name="smokeTest">
-        <method signature="OrganizationTest.createOrgWithMandField()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" name="createOrgWithMandField" class="com.vtiger.crm.orgtest.OrganizationTest"/>
+        <method signature="CreateOrgTest.createOrgWithMandField()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" name="createOrgWithMandField" class="com.vtiger.crm.orgtest.CreateOrgTest"/>
+        <method signature="CreateOrgTest.createOrgWithMandField()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" name="createOrgWithMandField" class="com.vtiger.crm.orgtest.CreateOrgTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2024-06-13T21:51:15 IST" name="Default test" finished-at="2024-06-13T21:51:34 IST" duration-ms="19147">
-      <class name="com.vtiger.crm.orgtest.OrganizationTest">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:14 IST" name="beforesuite" finished-at="2024-06-13T21:51:15 IST" duration-ms="609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:15 IST" name="beforeclass" finished-at="2024-06-13T21:51:18 IST" duration-ms="3155" status="PASS">
+    <test started-at="2024-06-17T15:53:28 IST" name="TestRunner_1" finished-at="2024-06-17T15:54:38 IST" duration-ms="70639">
+      <class name="com.vtiger.crm.orgtest.CreateOrgTest">
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:53:28 IST" name="beforeclass" finished-at="2024-06-17T15:53:32 IST" duration-ms="4112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:18 IST" name="beforeMethod" finished-at="2024-06-13T21:51:21 IST" duration-ms="3618" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:53:32 IST" name="beforeMethod" finished-at="2024-06-17T15:53:36 IST" duration-ms="4674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createOrgWithMandField()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:21 IST" name="createOrgWithMandField" finished-at="2024-06-13T21:51:32 IST" duration-ms="10202" status="PASS">
+        <test-method signature="createOrgWithMandField()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:53:36 IST" name="createOrgWithMandField" finished-at="2024-06-17T15:53:50 IST" duration-ms="14083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrgWithMandField -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:32 IST" name="afterMethod" finished-at="2024-06-13T21:51:33 IST" duration-ms="1662" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:53:50 IST" name="afterMethod" finished-at="2024-06-17T15:53:52 IST" duration-ms="1788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:33 IST" name="afterClass" finished-at="2024-06-13T21:51:34 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:53:52 IST" name="beforeMethod" finished-at="2024-06-17T15:53:56 IST" duration-ms="3485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createOrgwithIndustry()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:53:56 IST" name="createOrgwithIndustry" finished-at="2024-06-17T15:54:07 IST" duration-ms="11648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgwithIndustry -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:07 IST" name="afterMethod" finished-at="2024-06-17T15:54:09 IST" duration-ms="1820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:09 IST" name="beforeMethod" finished-at="2024-06-17T15:54:14 IST" duration-ms="5054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createOrgwithMobileNum()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:14 IST" name="createOrgwithMobileNum" finished-at="2024-06-17T15:54:27 IST" duration-ms="12353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgwithMobileNum -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:27 IST" name="afterMethod" finished-at="2024-06-17T15:54:29 IST" duration-ms="2193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:29 IST" name="beforeMethod" finished-at="2024-06-17T15:54:33 IST" duration-ms="4210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="m()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:33 IST" name="m" finished-at="2024-06-17T15:54:33 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:33 IST" name="afterMethod" finished-at="2024-06-17T15:54:37 IST" duration-ms="4368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@76494737]" started-at="2024-06-17T15:54:37 IST" name="afterClass" finished-at="2024-06-17T15:54:38 IST" duration-ms="715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.vtiger.crm.orgtest.OrganizationTest@16eb3ea3]" started-at="2024-06-13T21:51:34 IST" name="aftersuite" finished-at="2024-06-13T21:51:34 IST" duration-ms="14" status="PASS">
+      </class> <!-- com.vtiger.crm.orgtest.CreateOrgTest -->
+    </test> <!-- TestRunner_1 -->
+    <test started-at="2024-06-17T15:53:27 IST" name="TestRunner_2" finished-at="2024-06-17T15:55:08 IST" duration-ms="100616">
+      <class name="com.vtiger.crm.orgtest.CreateOrgTest">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:53:27 IST" name="beforesuite" finished-at="2024-06-17T15:53:27 IST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:53:28 IST" name="beforeclass" finished-at="2024-06-17T15:53:35 IST" duration-ms="7253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:53:35 IST" name="beforeMethod" finished-at="2024-06-17T15:53:39 IST" duration-ms="4511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createOrgWithMandField()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:53:39 IST" name="createOrgWithMandField" finished-at="2024-06-17T15:54:06 IST" duration-ms="26607" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: *[name='accountname']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa26c841-f02b-4423-b977-8ffb4d815b28, findElement {using=name, value=accountname}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:27626, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 67388, moz:profile: C:\Users\Neelima\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27626/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa26c841-f02b-4423-b977-8ffb4d815b28]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='accountname']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa26c841-f02b-4423-b977-8ffb4d815b28, findElement {using=name, value=accountname}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:27626, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 67388, moz:profile: C:\Users\Neelima\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27626/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa26c841-f02b-4423-b977-8ffb4d815b28
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+at com.vtiger.crm.objectrepositoryutility.CreateNewOrganizationPage.createOrganization(CreateNewOrganizationPage.java:61)
+at com.vtiger.crm.orgtest.CreateOrgTest.createOrgWithMandField(CreateOrgTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgWithMandField -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:06 IST" name="afterMethod" finished-at="2024-06-17T15:54:08 IST" duration-ms="1801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:08 IST" name="beforeMethod" finished-at="2024-06-17T15:54:12 IST" duration-ms="3841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createOrgwithIndustry()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:12 IST" name="createOrgwithIndustry" finished-at="2024-06-17T15:54:38 IST" duration-ms="26622" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: *[name='accountname']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa26c841-f02b-4423-b977-8ffb4d815b28, findElement {using=name, value=accountname}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:27626, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 67388, moz:profile: C:\Users\Neelima\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27626/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa26c841-f02b-4423-b977-8ffb4d815b28]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='accountname']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa26c841-f02b-4423-b977-8ffb4d815b28, findElement {using=name, value=accountname}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:27626, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 67388, moz:profile: C:\Users\Neelima\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27626/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa26c841-f02b-4423-b977-8ffb4d815b28
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+at com.vtiger.crm.objectrepositoryutility.CreateNewOrganizationPage.createOrganization(CreateNewOrganizationPage.java:73)
+at com.vtiger.crm.orgtest.CreateOrgTest.createOrgwithIndustry(CreateOrgTest.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgwithIndustry -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:39 IST" name="afterMethod" finished-at="2024-06-17T15:54:40 IST" duration-ms="1807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:40 IST" name="beforeMethod" finished-at="2024-06-17T15:54:44 IST" duration-ms="3532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createOrgwithMobileNum()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:44 IST" name="createOrgwithMobileNum" finished-at="2024-06-17T15:54:55 IST" duration-ms="11599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgwithMobileNum -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:56 IST" name="afterMethod" finished-at="2024-06-17T15:54:57 IST" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:54:57 IST" name="beforeMethod" finished-at="2024-06-17T15:55:01 IST" duration-ms="3558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="m()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:55:01 IST" name="m" finished-at="2024-06-17T15:55:01 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:55:01 IST" name="afterMethod" finished-at="2024-06-17T15:55:05 IST" duration-ms="4723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:55:05 IST" name="afterClass" finished-at="2024-06-17T15:55:08 IST" duration-ms="2619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.vtiger.crm.orgtest.CreateOrgTest@1807e3f6]" started-at="2024-06-17T15:55:08 IST" name="aftersuite" finished-at="2024-06-17T15:55:08 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
-      </class> <!-- com.vtiger.crm.orgtest.OrganizationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.vtiger.crm.orgtest.CreateOrgTest -->
+    </test> <!-- TestRunner_2 -->
+  </suite> <!-- Suite -->
 </testng-results>
