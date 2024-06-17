@@ -58,7 +58,7 @@
 						<configuration>
 							<suiteXmlFiles>
 								<!-- TestNG suite XML files -->
-								<suiteXmlFile>testng_Practice.xml</suiteXmlFile>
+								<suiteXmlFile>Suite_ParallelCrossBrowserTest.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
